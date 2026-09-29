@@ -1,0 +1,17 @@
+ur3_llm_control_node:
+  ros__parameters:
+    student_info:
+      student_id: "23020765"     # Điền MSSV thực tế của bạn
+      modulo_p: 5                # 65 mod 6 = 5
+
+    mapping_rules:
+      zone_a: "blue_cube"
+      zone_b: "yellow_cube"
+      zone_c: "red_cube"
+
+    # Cấu hình kết nối Ollama local
+    llm_config:
+      api_endpoint: "http://localhost:11434/v1/chat/completions"
+      api_key: "ollama"           # Điền gì cũng được, Ollama không check key
+      model_name: "qwen2.5:3b"    # Tên model bạn vừa tải
+      temperature: 0.0

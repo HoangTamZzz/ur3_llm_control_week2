@@ -1,0 +1,30 @@
+ur3_llm_control_node:
+  ros__parameters:
+    # Thông tin bàn thao tác
+    table:
+      pose: [0.4, 0.0, -0.05]
+      size: [0.8, 1.2, 0.1]
+
+    # Vị trí ban đầu của các khối màu (x, y, z) tính bằng mét
+    objects:
+      red_cube:
+        position: [0.35, -0.20, 0.025]
+        dimensions: [0.05, 0.05, 0.05]
+      yellow_cube:
+        position: [0.35, 0.00, 0.025]
+        dimensions: [0.05, 0.05, 0.05]
+      blue_cube:
+        position: [0.35, 0.20, 0.025]
+        dimensions: [0.05, 0.05, 0.05]
+
+    # Vị trí tọa độ đích của các Zone
+    zones:
+      zone_a:
+        position: [0.55, -0.20, 0.00]
+      zone_b:
+        position: [0.55, 0.00, 0.00]
+      zone_c:
+        position: [0.55, 0.20, 0.00]
+
+    # Góc khớp mặc định cho tư thế home() [joint_1, joint_2, joint_3, joint_4, joint_5, joint_6]
+    home_joints: [0.0, -1.57, 1.57, -1.57, -1.57, 0.0]
